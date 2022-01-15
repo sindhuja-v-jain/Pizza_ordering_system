@@ -22,7 +22,7 @@ export default class HomeScreen extends React.Component {
         console.log(res);  
         console.log(res.data);  
     
-        const posts = this.state.orders.filter(item => item.id !== id);  
+        const orders = this.state.orders.filter(item => item.id !== id);  
         this.setState({ orders });  
       })  
     
